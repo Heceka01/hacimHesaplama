@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacim Hesaplama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hacim Hesaplama</h1>
+        <form id="volumeForm">
+            <div class="table-responsive">
+                <table id="productTable">
+                    <thead>
+                        <tr>
+                            <th>EN (cm)</th>
+                            <th>BOY (cm)</th>
+                            <th>YÜKSEKLİK (cm)</th>
+                            <th>ADET</th>
+                            <th>HACİM (m³)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="productRow">
+                            <td data-label="EN (cm)"><input type="number" class="width" placeholder="En (cm)" required></td>
+                            <td data-label="BOY (cm)"><input type="number" class="length" placeholder="Boy (cm)" required></td>
+                            <td data-label="YÜKSEKLİK (cm)"><input type="number" class="height" placeholder="Yükseklik (cm)" required></td>
+                            <td data-label="ADET"><input type="number" class="quantity" placeholder="Adet" required></td>
+                            <td data-label="HACİM"><input type="text" class="volume" placeholder="Hacim (m³)" readonly></td>
+                        </tr>
+                        <tr class="productRow">
+                            <td data-label="EN (cm)"><input type="number" class="width" placeholder="En (cm)" required></td>
+                            <td data-label="BOY (cm)"><input type="number" class="length" placeholder="Boy (cm)" required></td>
+                            <td data-label="YÜKSEKLİK (cm)"><input type="number" class="height" placeholder="Yükseklik (cm)" required></td>
+                            <td data-label="ADET"><input type="number" class="quantity" placeholder="Adet" required></td>
+                            <td data-label="HACİM"><input type="text" class="volume" placeholder="Hacim (m³)" readonly></td>
+                        </tr>
+                        <tr class="productRow">
+                            <td data-label="EN (cm)"><input type="number" class="width" placeholder="En (cm)" required></td>
+                            <td data-label="BOY (cm)"><input type="number" class="length" placeholder="Boy (cm)" required></td>
+                            <td data-label="YÜKSEKLİK (cm)"><input type="number" class="height" placeholder="Yükseklik (cm)" required></td>
+                            <td data-label="ADET"><input type="number" class="quantity" placeholder="Adet" required></td>
+                            <td data-label="HACİM"><input type="text" class="volume" placeholder="Hacim (m³)" readonly></td>
+                        </tr>
+                        <tr class="productRow">
+                            <td data-label="EN (cm)"><input type="number" class="width" placeholder="En (cm)" required></td>
+                            <td data-label="BOY (cm)"><input type="number" class="length" placeholder="Boy (cm)" required></td>
+                            <td data-label="YÜKSEKLİK (cm)"><input type="number" class="height" placeholder="Yükseklik (cm)" required></td>
+                            <td data-label="ADET"><input type="number" class="quantity" placeholder="Adet" required></td>
+                            <td data-label="HACİM"><input type="text" class="volume" placeholder="Hacim (m³)" readonly></td>
+                        </tr>
+                        <tr class="productRow">
+                            <td data-label="EN (cm)"><input type="number" class="width" placeholder="En (cm)" required></td>
+                            <td data-label="BOY (cm)"><input type="number" class="length" placeholder="Boy (cm)" required></td>
+                            <td data-label="YÜKSEKLİK (cm)"><input type="number" class="height" placeholder="Yükseklik (cm)" required></td>
+                            <td data-label="ADET"><input type="number" class="quantity" placeholder="Adet" required></td>
+                            <td data-label="HACİM"><input type="text" class="volume" placeholder="Hacim (m³)" readonly></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+
+            
+            
+            <div class="input-container">
+                <div>
+                    <button type="button" id="addRow">Yeni Satır Ekle</button>
+                </div>
+                <div style="display: flex;align-items:center;gap: 20px;">
+                    <label for="transport" style="white-space: nowrap;">Taşıma Yöntemi:</label>
+                    <select id="transport" required style="min-width: 130px;">
+                        <option value="karayolu">Karayolu</option>
+                        <option value="havayolu">Havayolu</option>
+                        <option value="denizyolu">Denizyolu</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div style="float: right;">
+                <h3>Toplam Hacim: <span id="totalVolume">0</span> m³</h3>
+                <h3>Toplam Ağırlık: <span id="totalWeight">0</span> kg</h3>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
